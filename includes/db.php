@@ -4,11 +4,11 @@ $username = "root";
 $password = "";
 $name_db = "sb_admin2";
 
-$connect = new mysqli($server,$username,$password,$name_db);
+$conn = new mysqli($server,$username,$password,$name_db);
 
-if($connect->connect_error)
-    die("connection failed: " . $connect->connect_error);
+if($conn->connect_error)
+    die("connection failed: " . $conn->connect_error);
 else
-    echo "connected";
+    echo "connected" . "<br>";;
 
-?>
+?> 
